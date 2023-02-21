@@ -8,59 +8,57 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
-
-body::-webkit-scrollbar {
-    display: none;
+header {
+    width: 100%;
+    height: 20%;
+    margin: 0 0 3em 0;
 }
 
 nav {
-    width: 30%;
+    width: 20%;
     height: 8%;
     float: right;
+    padding: 20px;
     margin: 0 0 3em 0;
-    border: 1px solid blue;
-
+    word-spacing: 12px;
 }
 
 a.navbar-brand,
 a.nav-link {
     font-family: "Architects Daughter", sans-serif;
     font-size: 1em;
-
 }
 
-header {
-    width: 100%;
-    height: 10%;
-    margin: 80px 0 0 0;
-    border: 2px solid black;
+.name-sake {
+    margin-top: 2em;
 }
 
-header h1 {
+h1.name {
+    margin: 1em 0 0 2em;
     font-family: din-condensed, sans-serif;
-    font-size: 4em;
-    padding: 0 0 0 40px;
+    font-size: 3em;
 }
 
-header h2 {
+
+h2.job-title {
+    margin-left: 6em;
     font-family: raleway, sans-serif;
-    font-size: 2em;
-    padding: 0 0 0 40px;
+    font-size: 1em;
 }
 
 
 div.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     padding: 40px;
-    height: 80vh;
+    /* height: 80vh; */
     pointer-events: all;
     padding: 20px;
     /* border: 2px solid black; */
+}
+
+img {
+    size: 400px 400px;
 }
 
 a {
@@ -74,14 +72,12 @@ a:hover {
 }
 
 
-
-
 .about,
 .projects,
 .contact {
     /* border: 1px solid red; */
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
     padding: 40px;
 }
 
@@ -104,7 +100,7 @@ p.titles {
     font-size: 1.2em;
     text-align: justify;
     padding: 40px;
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 button {
@@ -136,7 +132,7 @@ footer {
     position: fixed;
     bottom: 0;
 
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 1000;
 }
 
@@ -151,110 +147,113 @@ h3 span {
 }
 
 @media only screen and (max-width: 1024px) {
-    body {
+    /* body {
         /* background-color: #424141; */
-        overflow: scroll;
-        overflow-x: hidden;
-    }
+    /* overflow: scroll;
+        overflow-x: hidden; */
+}
 
-    body::-webkit-scrollbar {
-        display: none;
-    }
+/* body::-webkit-scrollbar {
+        /* display: none; 
+    } */
 
 
-    div.container {
-        display: flex;
-        /* grid-template-rows: 1fr 1fr 1fr; */
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: auto;
-        /* width: 100vh; */
-    }
+div.container {
+    display: flex;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    /* width: 100vh; */
+}
 
-    .projects,
-    .contact,
-    .about {
-        width: 90vw;
-        align-content: center;
-        justify-content: center;
-        padding: 5%;
-    }
+.projects,
+.contact,
+.about {
+    width: 90vw;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+}
 
-    /* .about {
+/* .about {
     /* width: 100vw; */
 
-    /* .projects,
+/* .projects,
   .contact {
     margin-bottom: 3%;
   } */
 
-    .goldCorner {
-        width: 10%;
-        height: 10%;
-    }
 
-    button svg {
-        width: 30px;
-        height: 30px;
-        right: 0;
-    }
 
-    header {
-        height: 15vh;
-        /* border: 1px solid red; */
-    }
+button svg {
+    width: 30px;
+    height: 30px;
+    right: 0;
+}
 
-    header h1,
-    header h2 {
-        padding: 5px 0 5px 0;
-    }
+header {
+    height: 15vh;
+    /* border: 1px solid red; */
+}
 
-    header h1 {
-        font-size: 2.3em;
-    }
+header h1,
+header h2 {
+    padding: 5px 0 5px 0;
+}
 
-    header h2 {
-        font-size: 1.5em;
-    }
+header h1 {
+    font-size: 2.3em;
+}
 
-    footer {
-        height: 3vh;
-        font-size: 0.8em;
-    }
+header h2 {
+    font-size: 1.5em;
+}
+
+footer {
+    height: 3vh;
+    font-size: 0.8em;
+}
 }
 
 @media only screen and (max-width: 375px) {
-    body {
+    /* body {
         overflow-x: hidden;
-    }
+    } */
 
-    body::-webkit-scrollbar {
-        display: none;
-    }
+    /* body::-webkit-scrollbar {
+        /* display: none; */
+}
 
-    header h1 {
-        font-size: 2em;
-    }
+/* nav {
+    width: 40%;
 
-    header h2 {
-        font-size: 1.2em;
-    }
+} */
 
-    .projects,
-    .contact,
-    .about {
-        height: 60vh;
-    }
+h1.name {
+    font-size: 3em;
+}
 
-    .about {
-        margin-bottom: 40%;
-        font-size: 0.8em;
-    }
+*/ header h1 {
+    font-size: 2em;
+}
 
-    .projects,
-    .contact {
-        margin-bottom: 80%;
-    }
+header h2 {
+    font-size: 1.2em;
+}
 
+.projects,
+.contact,
+.about {
+    height: 60vh;
+}
 
+.about {
+    margin-bottom: 40%;
+    font-size: 0.8em;
+}
+
+.projects,
+.contact {
+    margin-bottom: 80%;
 }
